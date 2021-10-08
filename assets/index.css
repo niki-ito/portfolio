@@ -254,10 +254,9 @@ footer {
 
 #resume {
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 20px;
   padding: 30px;
   margin-top: 70px;
-  position: absolute;
   pointer-events: none;
 }
 
@@ -292,6 +291,10 @@ footer {
   grid-area: info;
 }
 
+#resumeImage {
+  width: 80%;
+}
+
 #resume h7 {
   font-size: 1rem;
   font-weight: bold;
@@ -310,12 +313,14 @@ footer {
 #resume h5 {
   font-size: 1.7rem;
   text-transform: uppercase;
+  line-height: 1rem;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: 3%;
 }
 
-#resume h5 span {
-  font-size: 0.8rem;
+#resumePosition {
+  margin-top: 20px;
 }
 
 
@@ -326,7 +331,7 @@ footer {
 }
 
 .intro-text h1 {
-  padding-top: 100px;
+  padding-top: 70px;
   text-align: right;
 }
 
@@ -418,7 +423,10 @@ text-align: right;
   }
 
   #resume {
-    max-width: 800px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    
   }
 
   #resume h7 {
@@ -437,26 +445,17 @@ text-align: right;
   }
 
   #resume h5 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
-
-  #resume h5 span {
-    font-size: 1.4rem;
-  }
-
-  #resume h5 {
     font-size: 2.2rem;
+    margin-bottom: 10px;
+    margin-top: 5%;
   }
 
-  #resume h5 span {
-    font-size: 1rem;
-  }
 
   #bio {
-    padding-left: 40%;
+    padding-right: 0;
     margin-top: -60px;
-    font-size: 1.5rem;
+    padding-left: 40%;
+    font-size: 1.3rem;
     text-align: right;
     display: block;
   }
@@ -468,6 +467,7 @@ text-align: right;
 @media screen and (min-width: 1000px){
   h1 {
     font-size: 6em;
+    padding-top: 0px;
   }
 
   h3 {
@@ -481,9 +481,9 @@ text-align: right;
 
   #bio {
     text-align: right;
-    width: 60%;
+    padding-left: 25%;
     margin-top: -80px;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     margin-bottom: 0px;
   }
 
@@ -527,10 +527,6 @@ text-align: right;
   #resume h5 {
     font-size: 3rem;
     margin-bottom: 10px;
-  }
-
-  #resume h5 span {
-    font-size: 1.4rem;
   }
 
   .icons {
