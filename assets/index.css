@@ -273,7 +273,6 @@ footer {
   margin: 0 20px;
   padding: 30px;
   margin-top: 70px;
-  pointer-events: none;
 }
 
 #iframe{
@@ -324,6 +323,7 @@ footer {
   font-size: 0.8rem;
   margin-top: 5px;
   margin-bottom: 15px;
+  padding-left: 20px;
 }
 
 #resume h5 {
@@ -543,10 +543,17 @@ text-align: right;
   }
 
   #resume p {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-top: 10px;
     margin-bottom: 20px;
     line-height: 2rem;
+  }
+
+  #resume span {
+    display: block;
+    margin-top: 5px;
+    font-size: 1rem;
+    color: grey;
   }
 
   #resume h5 {
