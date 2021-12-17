@@ -267,16 +267,6 @@ footer {
   margin-bottom: 50px;
 }
 
-#resume-body {
-  position: relative;
-}
-
-#resume {
-  max-width: 1200px;
-  margin: 0 20px;
-  padding: 30px;
-  margin-top: 70px;
-}
 
 #iframe{
   position: absolute;
@@ -291,17 +281,23 @@ footer {
   height: 100vh; 
 }
 
+#resume {
+  margin: 0 20px;
+  padding: 30px;
+  margin-top: 70px;
+}
+
 .resume-row {
   display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 37% auto;
-  grid-template-areas: "title info";
-  align-items: start;
+  grid-gap: 3rem;
+  grid-template-columns: 100%;
+  grid-template-areas: "profile" "info";
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .resume-column1 {
-  grid-area: title;
+  grid-area: profile;
   text-align: end;
 }
 
@@ -310,38 +306,19 @@ footer {
 }
 
 #resumeImage {
-  width: 80%;
+  width: 100%;
 }
 
-#resume h7 {
-  font-size: 1rem;
-  font-weight: bold;
-}
-
-#resume h8 {
-  font-size: 1rem;
-}
-
-#resume p {
-  font-size: 0.8rem;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  padding-left: 20px;
-}
-
-#resume h5 {
-  font-size: 1.7rem;
-  text-transform: uppercase;
-  line-height: 1rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-  margin-top: 3%;
-}
-
-#resumePosition {
+#contacts{
   margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  transition: all .2s ease-in-out;
 }
 
+#contacts a:hover {
+  transform: scale(1.1); 
+}
 
 /*tablet*/
 @media screen and (min-width: 600px){
@@ -460,33 +437,32 @@ text-align: right;
   }
 
   #resume {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin-top: 100px;
   }
-
-  #resume h7 {
-    font-size: 1.3rem;
-  }
-
-  #resume h8 {
-    font-size: 1.3rem;
-  }
-
-  #resume p {
-    font-size: 1rem;
-    margin-top: 10px;
+  
+ .resume-row {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 3rem;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "profile info";
+    align-items: center;
     margin-bottom: 20px;
-    line-height: 2rem;
+  } 
+  
+  .resume-column1 {
+    grid-area: profile;
+    text-align: end;
   }
-
-  #resume h5 {
-    font-size: 2.2rem;
-    margin-bottom: 10px;
-    margin-top: 5%;
+  
+  .resume-column2 {
+    grid-area: info;
   }
-
+  
+  #resumeImage {
+    width: 100%;
+  }
 
   #bio {
     padding-right: 0;
@@ -558,33 +534,6 @@ text-align: right;
     display: inline-block;
   }
 
-  #resume h7 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-
-  #resume h8 {
-    font-size: 2rem;
-  }
-
-  #resume p {
-    font-size: 1.4rem;
-    margin-top: 10px;
-    margin-bottom: 20px;
-    line-height: 2rem;
-  }
-
-  #resume span {
-    display: block;
-    margin-top: 5px;
-    font-size: 1rem;
-    color: grey;
-  }
-
-  #resume h5 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-  }
 
   .icons {
     width: 20px;
@@ -596,6 +545,10 @@ text-align: right;
   h6 {
     font-size: 1.7rem;
     margin-bottom: 25px;
+  }
+
+  .resume-row {
+    width: 70%;
   }
 
 }
