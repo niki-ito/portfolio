@@ -221,7 +221,7 @@ div .row {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: end;
+  justify-content: center;
 }
 
 .index .row:nth-child(2n){
