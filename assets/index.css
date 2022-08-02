@@ -5,7 +5,7 @@ margin:0px;
 margin-top:-20px;
 font-family: 'Istok Web', sans-serif;
 color: rgb(22, 39, 48);
-background-color: rgb(255, 254, 242);
+background-color: #5abe94;
 }
 
 h1 {
@@ -67,6 +67,16 @@ p {
   width: 100%;
   height: 100%;
   z-index: 0 !important;
+  display: none;
+}
+
+#header-gif {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 article {
@@ -327,6 +337,18 @@ footer {
 @media screen and (min-width: 600px){
   .intro-text {
   text-align: right;
+}
+
+body{
+  background-color: rgb(255, 254, 242);
+  }
+
+#header-sketch {
+  display: block;
+}
+
+#header-gif {
+  display: none;
 }
 
 .intro-text h1 {
