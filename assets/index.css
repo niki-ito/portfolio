@@ -8,6 +8,10 @@ color: rgb(22, 39, 48);
 background-color: #5abe94;
 }
 
+.peview-nav {
+  display: none;
+}
+
 h1 {
   font-family: 'Pacifico', cursive;
   font-size: 3em;
@@ -92,7 +96,7 @@ article {
 
 
 .parallax {
- height: 600px;
+ height: 450px;
 }
 
 .intro {
@@ -100,12 +104,11 @@ article {
   position: relative;
   pointer-events: none;
   margin: 0 auto;
-  padding: 0px 20px;
+  padding: 0px 30px;
 }
 
 .btn {
   background-color:rgb(22, 39, 48); 
-  opacity: 0.3;
   border-radius: 50px;
   padding:5px 15px;
   color:white;
@@ -113,10 +116,6 @@ article {
   text-transform: uppercase;
   font-size: 10px;
   font-weight: bold;
-}
-
-.btn:hover {
-  opacity: 1; 
 }
 
 nav ul li a {
@@ -128,7 +127,7 @@ nav ul li{
 }
 
 nav li:not(:last-child){
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 nav ul {
@@ -138,11 +137,10 @@ nav ul {
 
 .intro-text {
   max-width: 1300px;
-  padding-right: 20px;
 }
 
 .intro-text h1{
-  padding-top: 250px;
+  padding-top: 200px;
   text-align: center;
 }
 
@@ -351,6 +349,14 @@ body{
   display: none;
 }
 
+nav ul {
+  padding-top: 70px;
+}
+
+.intro {
+  padding-right: 60px;
+}
+
 .intro-text h1 {
   padding-top: 70px;
   text-align: right;
@@ -360,6 +366,18 @@ body{
 padding-top: 0px;
 text-align: right;
 }
+
+.btn {
+  opacity: 0.3;
+}
+
+.btn:hover {
+  opacity: 1; 
+}
+
+.parallax {
+  height: 580px;
+ }
 
 .index .column-image, .column-text{
   /* width: 100%; */
@@ -491,7 +509,6 @@ text-align: right;
   #bio {
     padding-right: 0;
     margin-top: -60px;
-    padding-left: 40%;
     font-size: 1.3rem;
     text-align: right;
     display: block;
@@ -527,10 +544,6 @@ text-align: right;
   p {
     font-size: 1em;
     line-height: 1.5rem;
-  }
-
-  .full {
-    display: block;
   }
 
   .column-image {
