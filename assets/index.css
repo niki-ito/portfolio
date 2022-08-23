@@ -173,6 +173,29 @@ figure #desktop {
   display: none;
 }
 
+.multi-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -20px;
+  /* margin-top:70px; */
+}
+
+#player .column{
+  width: 230px;
+  margin:0 -20px 0 -20px;
+}
+
+/* #grid img {
+  width: 30%;
+  height: 30%;
+  object-fit: cover;
+} */
+
+#grids .column{
+  margin:0 -20px 0 -20px;
+}
+
 .icons {
   width: 13px;
   opacity: 0.4;
@@ -420,6 +443,10 @@ footer {
   }
 
   section {
+    margin-top:70px;
+  }
+
+  .multi-columns {
     margin-top:70px;
   }
 
