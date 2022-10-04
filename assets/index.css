@@ -114,7 +114,7 @@ p {
 
 article {
   position: relative;
-  z-index: 1;
+  z-index: 10;
 
 }
 
@@ -184,6 +184,13 @@ nav ul {
 
 .container {
   max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: left;
+  padding-top: 50px;
+}
+
+.container-home {
   margin: 0 auto;
   padding: 20px;
   text-align: left;
@@ -729,7 +736,7 @@ footer {
   }
 
   .index {
-    padding-left: 35vw;
+    padding-left: 37vw;
     padding-right: -20vh;
   }
 
