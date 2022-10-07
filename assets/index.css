@@ -136,6 +136,11 @@ article {
   padding: 0px 30px;
 }
 
+.work figure, #two figure, #three figure {
+  margin: 0px;
+  width: 100%;
+}
+
 .work-nav {     
   width: 100%;                                                                                                                                            
 }
@@ -243,13 +248,9 @@ figure #desktop {
 .grids{
   display: grid;
   justify-content: center;
-  margin-bottom: -20px;
   grid-template-columns: 1fr;
 }
 
-.grids .column{
-  margin:0 -20px 0px -20px;
-}
 
 #two, #three{
   grid-template-columns: 1fr;
@@ -546,10 +547,12 @@ footer {
 
   #two{
     grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
   }
 
   #three{
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
   }
 
   #two img {
